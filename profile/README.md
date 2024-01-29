@@ -30,8 +30,8 @@ To access no-code and make your low-code GuideBlock available [create an account
 
 The best way to start is review one of the existing GuideBlocks in this repo, you will be creating a wrapper around your normal logic for visual elements.
 
-1. Unbundle the element from your code
-2. Prepare to take the configuration from JSON data (see the schema)
+1. (Optional) Unbundle the component in your code that you want to make a GuideBlock. You might need a bit of re-factoring
+2. (Optional) Prepare to take the configuration from JSON data (see the schema)
 3. Integrate the Contextual SDK. 
    - [For IOS and Android](https://dashboard.contextu.al/wizard/mobile_wizard)
    - For Web you can try without adding the SDK by using the [Contextual Chrome Extension](https://dashboard.contextu.al/wizard/web_wizard)
