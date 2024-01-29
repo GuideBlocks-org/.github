@@ -24,18 +24,26 @@ This video explains GuideBlocks and Extensibility:
   <img src="https://i.vimeocdn.com/video/1768561152-e605b806a1b3d931a471131e377904cdbb55b97fcdeeda2bb30882397d4acf1f-d_800x600?r=pad" alt="Contextual Extensibility Video">
 </a>
 
+To access no-code and make your low-code GuideBlock available [create an account](https://dashboard.contextu.al/register)
+
 ## How do I make a GuideBlock?
 
 The best way to start is review one of the existing GuideBlocks in this repo, you will be creating a wrapper around your normal logic for visual elements.
 
 1. Unbundle the element from your code
 2. Prepare to take the configuration from JSON data (see the schema)
-3. Implement the following methods in the GuideBlock
-   - 
-
-
-To access no-code and make your low-code GuideBlock available [create an account](https://dashboard.contextu.al/register)
-
+3. Integrate the Contextual SDK. 
+   - [For IOS and Android](https://dashboard.contextu.al/wizard/mobile_wizard)
+   - For Web you can try without adding the SDK by using the [Contextual Chrome Extension](https://dashboard.contextu.al/wizard/web_wizard)
+4. Implement the following methods in the GuideBlock (refer to the Sample Apps below to see examples)
+   - `presentGuideBlock` which wraps your code for runtime display to show to the user. [IOS ref:](https://docs.contextu.al/sdks/ios/reference/guideblocks/ctxbaseguidecontroller/presentguideblock/)
+   - `isDismissingGuide` a callback when your GuideBlock has completed or being dismissed. Perform any cleanup required to remove your component from display.
+5. Map the incoming `GuidePayload` JSON from the Contextual Dashboard to your code's configurable elements [[IOS ref:]](https://docs.contextu.al/sdks/ios/reference/guideblocks/ctxbaseguidecontroller/guidepayload/overview/). 
+   - For example, text and image content, size, shape, colour. The configurations closely follow well-known CSS type terms.
+   - If you have additional parameters that are not available in the `GuidePayload`, then they will be added in the Extensibility section. 
+6. Register your GuideBlock for use in the Contextual Dashboard with `registerGuideBlock`. [IOS ref:](https://docs.contextu.al/sdks/ios/reference/guideblocks/overview/)
+7. Create a Guide in the [Contextual Dashboard](https://dashboard.contextu.al/) and under the Extensibility section, add your `guideBlockKey` and the name of your GuideBlock. Add any other parameters you need from Step 5.
+8. Enter preview mode on your device and view your GuideBlock. Once it is working OK, you can test it in runtime mode.
 
 ## Sample Apps that use GuideBlocks
 
