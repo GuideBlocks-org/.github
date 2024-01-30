@@ -42,7 +42,7 @@ The best way to start is review one of the existing GuideBlocks in this repo, yo
    - For example, text and image content, size, shape, colour. The configurations closely follow well-known CSS type terms.
    - If you have additional parameters that are not available in the `GuidePayload`, then they will be added in the Extensibility section. 
 6. Register your GuideBlock for use in the Contextual Dashboard with `registerGuideBlock`. [IOS ref:](https://docs.contextu.al/sdks/ios/reference/guideblocks/overview/)
-7. Create a Guide in the [Contextual Dashboard](https://dashboard.contextu.al/) and under the Extensibility section, add your `guideBlockKey` and the name of your GuideBlock. Add any other parameters you need from Step 5.
+7. Create a Guide in the [Contextual Dashboard](https://dashboard.contextu.al/) and under the Extensibility section, add a key named `guideBlockKey` and enter in the value that you registered the GuideBlock as (in step 6). Add any other parameters you need from Step 5.
 8. Enter preview mode on your device and view your GuideBlock. Once it is working OK, you can test it in runtime mode.
 
 ## Sample Apps that use GuideBlocks
