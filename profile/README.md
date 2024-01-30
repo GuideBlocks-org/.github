@@ -9,7 +9,7 @@ You can also make an existing App component into a GuideBlock (see instructions)
 
 Product teams are always asking their developers to tweak engagement elements of your App. The GuideBlocks mission is to let them change it themselves once you've done the initial coding.
 
-So this is **Allow you to Code Once, Run Anywhere, Anytime and for Any Users**. When connected to the Contextual SDK and platform, the Product team can change wording, colours and then launch to targeted groups of App users (or all users) without an App release.
+So this will **Allow you to Code Once, Run Anywhere, Anytime and for Any Users**. When connected to the Contextual SDK and platform, the Product team can change wording, colours and then launch to targeted groups of App users (or all users) without an App release.
 
 The other benefits are:
 
