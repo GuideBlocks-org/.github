@@ -5,7 +5,7 @@ Developers can add GuideBlocks to your App and then allow your Product Managers,
 
 You can also make an existing App component into a GuideBlock (see instructions), you can then keep private or publish here at https://guideblocks.org
 
-## What use GuideBlocks?
+## Why use GuideBlocks?
 
 Product teams are always asking their developers to tweak engagement elements of your App. The GuideBlocks mission is to let them change it themselves once you've done the initial coding.
 
@@ -44,8 +44,12 @@ The best way to start is review one of the existing GuideBlocks in this repo, yo
 6. Register your GuideBlock for use in the Contextual Dashboard with `registerGuideBlock`. [IOS ref:](https://docs.contextu.al/sdks/ios/reference/guideblocks/overview/)
 7. Create a Guide in the [Contextual Dashboard](https://dashboard.contextu.al/) and under the Extensibility section, add a key named `guideBlockKey` and enter in the value that you registered the GuideBlock as (in step 6). Add any other parameters you need from Step 5.
 8. Enter preview mode on your device and view your GuideBlock. Once it is working OK, you can test it in runtime mode.
+9. If you wish to contribute your GuideBlock to these public repos, follow the QA process in the [Android](https://github.com/GuideBlocks-org/Android-GuideBlocks/wiki) or [iOS](https://github.com/GuideBlocks-org/iOS-GuideBlocks/wiki) Wiki.
 
-## Sample Apps that use GuideBlocks
+## Sample Apps to test GuideBlocks
+
+**Doing a quick test?** Just clone these and build, the master branch should have all the completed GuideBlocks. The develop branche
+**Contribute a GuideBlock?** use these samples to submit for QA (see above)
 
 - for IOS at https://github.com/contextu-al/AirBnB-iOS
 - for Android at https://github.com/contextu-al/FavDish
